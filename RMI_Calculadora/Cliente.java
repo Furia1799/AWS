@@ -1,22 +1,18 @@
-
 import java.rmi.NotBoundException;
 import java.rmi.RemoteException;
 import java.rmi.registry.LocateRegistry;
 import java.rmi.registry.Registry;
 import java.util.Scanner;
-
 public class Cliente {
-
-    private static final String IP = "172.31.47.38"; // Puedes cambiar a localhost
-    private static final int PUERTO = 1100; //Si cambias aquí el puerto, recuerda cambiarlo en el servidor
-
+	private static final String IP = "localhost"; // Puedes cambiar a localhost
+	private static final int PUERTO = 1100; //Si cambias aquí el puerto, recuerda cambiarlo en el servidor
+	
     public static void main(String[] args) throws RemoteException, NotBoundException {
         Registry registry = LocateRegistry.getRegistry(IP, PUERTO);
         Interfaz interfaz = (Interfaz) registry.lookup("Ejemplo"); //Buscar en el registro...
-
-        Scanner scanner = new Scanner(System.in);
-
-        double number_one = 0, number_two = 0, result = 0;
+		String respuesta;
+		Scanner scanner = new Scanner(System.in);
+		double number_one = 0, number_two = 0, result = 0;
         int opccion = 0;
 
         do {
@@ -45,15 +41,15 @@ public class Cliente {
                     break;
                 case 2:
                     System.out.println("Opccion elejida --Resta--");
-                    result = interfaz.resta(number_one, number_two);
+                    //result = interfaz.resta(number_one, number_two);
                     break;
                 case 3:
                     System.out.println("Opccion elejida --Multiplicacion--");
-                    result = interfaz.multiplicacion(number_one, number_two);
+                    //result = interfaz.multiplicacion(number_one, number_two);
                     break;
                 case 4:
                     System.out.println("Opccion elejida --Divicion--");
-                    result = interfaz.divicion(number_one, number_two);
+                   // result = interfaz.divicion(number_one, number_two);
                     break;
                 case 5:
                     System.out.println("-- GRACIAS POR SU ATENCION , ADIOS --");
