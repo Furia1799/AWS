@@ -41,15 +41,15 @@ public class Cliente {
                     break;
                 case 2:
                     System.out.println("Opccion elejida --Resta--");
-                    //result = interfaz.resta(number_one, number_two);
+                    result = interfaz.resta(number_one, number_two);
                     break;
                 case 3:
                     System.out.println("Opccion elejida --Multiplicacion--");
-                    //result = interfaz.multiplicacion(number_one, number_two);
+                    result = interfaz.multiplicacion(number_one, number_two);
                     break;
                 case 4:
                     System.out.println("Opccion elejida --Divicion--");
-                   // result = interfaz.divicion(number_one, number_two);
+                    result = interfaz.divicion(number_one, number_two);
                     break;
                 case 5:
                     System.out.println("-- GRACIAS POR SU ATENCION , ADIOS --");

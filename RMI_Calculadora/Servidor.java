@@ -13,7 +13,16 @@ public class Servidor {
         	*/
             @Override
             public double suma(double number_one , double number_two) throws RemoteException {
-                return 10;
+                return number_one + number_two;
+            };
+	    public double resta(double number_one , double number_two) throws RemoteException {
+                return number_one - number_two;
+            };
+	    public double multiplicacion(double number_one , double number_two) throws RemoteException {
+                return number_one * number_two;
+            };
+	    public double divicion(double number_one , double number_two) throws RemoteException {
+                return number_one / number_two;
             };
 
             
