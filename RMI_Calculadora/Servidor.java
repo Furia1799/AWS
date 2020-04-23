@@ -14,20 +14,25 @@ public class Servidor {
         Remote remote = UnicastRemoteObject.exportObject(new Interfaz() {
 
             @Override
-
             public double suma(double number_one, double number_two) throws RemoteException {
                 return number_one + number_two;
             }
+
+            ;
 
             @Override
             public double resta(double number_one, double number_two) throws RemoteException {
                 return number_one - number_two;
             }
 
+            ;
+
             @Override
             public double multiplicacion(double number_one, double number_two) throws RemoteException {
                 return number_one * number_two;
             }
+
+            ;
 
             @Override
             public double divicion(double number_one, double number_two) throws RemoteException {
