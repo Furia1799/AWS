@@ -150,7 +150,7 @@ public class Pelicula {
 
     public File venta_boleto(int id_pelicula, int boletos) throws IOException {
         cont++;
-        File file = new File("Ticket" + cont + ".txt");
+        File file = new File("/home/ubuntu/GIT/AWS/RMI_CINE/"+"Ticket" + cont + ".txt");
         FileWriter fr = null;
         fr = new FileWriter(file);
         boolean encontrar = false;

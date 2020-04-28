@@ -22,6 +22,7 @@ public class Cliente {
         String respuesta;
         int opccion = 0;
         File ticket;
+	int con = 1;
 
         Scanner scanner = new Scanner(System.in);
 
@@ -49,9 +50,11 @@ public class Cliente {
                     
                     
                     ticket = interfaz.comprar_boletos(id, cantidad);
+			ticket = new File("/home/ubuntu/GIT/AWS/RMI_CINE/"+"Ticket "+ con + ".txt");
                     System.out.println("-----COMPRA CONFIRMADA-----");
                     System.out.println("Se ha descargado el archivo!");
                     System.out.println("ruta de descarga: " + ticket.getAbsolutePath());
+			con++;
                     break;
                 case 3:
                     System.out.println("Eres Administrador ?  si = 1 , no = 2");
