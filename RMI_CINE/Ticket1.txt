@@ -1,0 +1,7 @@
+Hora: 14:51:58 Fecha: 28/04/20
+Pelicula: furia
+Id pelicula: 0
+Horario: sdf
+Precio por boleto: 50.0
+Asientos Reservados: 3
+Total : 150.0
