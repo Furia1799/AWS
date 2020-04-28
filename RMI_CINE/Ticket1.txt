@@ -1,7 +1,7 @@
-Hora: 16:24:58 Fecha: 28/04/20
+Hora: 17:50:58 Fecha: 28/04/20
 Pelicula: rapido y furioso
 Id pelicula: 0
-Horario: 3:30
+Horario: 3:00
 Precio por boleto: 25.0
 Asientos Reservados: 5
-Total : 75.0
+Total : 125.0

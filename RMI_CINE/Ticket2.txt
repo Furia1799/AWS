@@ -1,7 +1,7 @@
-Hora: 16:25:34 Fecha: 28/04/20
+Hora: 17:50:34 Fecha: 28/04/20
 Pelicula: batman
 Id pelicula: 1
 Horario: 5:00 pm
-Precio por boleto: 30.0
+Precio por boleto: 50.0
 Asientos Reservados: 2
-Total : 60.0
+Total : 100.0
