@@ -60,7 +60,7 @@ public class Hilo_Server extends Thread {
 
                 }*/
                 
-                 Socket enviar_destino = new Socket("192.168.56.1", PUERTO);
+                 Socket enviar_destino = new Socket("187.152.232.1", PUERTO);
                     out = new DataOutputStream(enviar_destino.getOutputStream());
                     out.writeUTF(nombre_recibido);
                     out.writeUTF(mensaje);
